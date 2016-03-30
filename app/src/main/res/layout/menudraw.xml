@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/selector_menuitem"
+        android:layout_marginTop="25dp">
+        <ImageView
+            android:id="@+id/iv_userphoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:src="@mipmap/userimg"/>
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击登录/注册"
+            android:layout_toRightOf="@id/iv_userphoto"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_uploaddesign"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_menuitem">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/addimg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="添加装饰图" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_mydesign"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1px"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_menuitem">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/gallery"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="我的图库" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_guanyu"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_menuitem">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/about"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="关于" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_suggest"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_menuitem"
+        android:layout_marginTop="1px">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/suggest"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="建议" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tuichu"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_menuitem"
+        android:layout_marginTop="1px">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/tuichu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="退出" />
+    </LinearLayout>
+
+</LinearLayout>

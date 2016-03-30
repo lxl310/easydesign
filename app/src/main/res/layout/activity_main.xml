@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.easydesign.MainActivity">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.easydesign.tools.DragScaleView
+            android:id="@+id/drag_scale_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_option"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:background="@mipmap/option_orange"
+        android:layout_margin="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+
+        <RelativeLayout
+            android:id="@+id/fra_shade_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_alignParentBottom="true">
+
+            <com.example.easydesign.tools.HorizontalListView
+                android:id="@+id/hlv"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#6000">
+            </com.example.easydesign.tools.HorizontalListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="#6000">
+
+                <Button
+                    android:id="@+id/bt_bh"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="壁画"
+                    android:textColor="@color/orange"
+                    android:background="@drawable/orangebar"/>
+
+                <Button
+                    android:id="@+id/bt_dh"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/bt_bh"
+                    android:text="地画"
+                    android:textColor="#ddd"
+                    android:background="@null"/>
+
+                <Button
+                    android:id="@+id/bt_pdh"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/bt_dh"
+                    android:text="棚顶画"
+                    android:textColor="#ddd"
+                    android:background="@null"/>
+                <Button
+                    android:id="@+id/bt_aqj"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/bt_pdh"
+                    android:text="凹墙角"
+                    android:textColor="#ddd"
+                    android:background="@null"/>
+                <Button
+                    android:id="@+id/bt_qdh"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/bt_aqj"
+                    android:text="墙地画"
+                    android:textColor="#ddd"
+                    android:background="@null"/>
+
+                <Button
+                    android:id="@+id/bnt_takepicture"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/camera"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
